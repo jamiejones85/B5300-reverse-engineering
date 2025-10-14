@@ -8,6 +8,10 @@ Any and all contribution is welcomed and encouraged!
 
 There's a UART TX pad on the board, this outputs UART at 500k baud. Log from boot in logs folder.
 
+You can access a shell using the UART, the startup.sh needs editing the comment out the insmod d:\apps\desktop.mod line and then rebuild and flash back otherwise the desktop.mod will be writing to the uart constantly.
+
+On the back of the PCB there's what looks like an unpopulated connector, the RX, TX and GND can be found on here.
+
 ## Tutorials
 
 - [1. How-To: Extract your firmware](docs/1-extracting-firmware.md)
