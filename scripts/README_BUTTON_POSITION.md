@@ -102,3 +102,7 @@ A: Ensure coordinates are within screen bounds (0-1280 for X, 0-720 for Y)
 
 **Q: Changes don't take effect?**
 A: Make sure to deploy the modified .data file back to the device and restart the UI application.
+
+` ./modify_button_position.py ../firmware/workspace/extracted/minfs/apps/Data/AndroidAuto.data 10 135 --index 3 --no-backup`
+Worked for me to move the button from the RHS of the screen to the LHS by default. 
+ 
